@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form project</title>
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>Login</h1>
+        <form id="RegistrationForm" onsubmit="return validateForm()">
+            <div class="div">
+                <label>Username</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <span class="error" id="usernameError"></span>
+            <br>
+            <br>
+            <div class="div">
+                 <label>Email Address</label>
+                <input type="email" id="email"required></div>
+           
+            <span class="error" id="emailError"></span>
+            <br>
+            <br>
+            <div class="div"><label for="password">Password</label>
+                <input type="Password" id="password" name="password" required></div>
+            
+            <span class="error" id="passwordError"></span>
+            <br>
+            <br>
+            <div class="div">
+                <label for="confirmpassword">confirm Password</label>
+            <input type="Password" id="confirmpassword" name="confirmpassword" required>
+            </div>
+            
+            <span class="error" id="confirmpasswordError"></span>
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Login">
+        </form>
+    </div>
+    <script src="./form index.js"> </script>
+
+
+</body>
+
+</html>
